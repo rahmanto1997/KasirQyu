@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Dashboard"
+            android:iconTint="#A9A9A9"
+            android:icon="@drawable/ic_baseline_home_24"/>
+        <item
+            android:id="@+id/nav_kelolaProduk"
+            android:title="Kelola Produk"
+            android:iconTint="#A9A9A9"
+            android:icon="@drawable/ic_baseline_class_24"/>
+        <item
+            android:id="@+id/nav_customer"
+            android:title="Kelola Pelanggan"
+            android:iconTint="#A9A9A9"
+            android:icon="@drawable/ic_baseline_people_24"/>
+        <item
+            android:id="@+id/nav_hostory"
+            android:title="Riwayat Transaksi"
+            android:iconTint="#A9A9A9"
+            android:icon="@drawable/ic_baseline_history_24"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting"
+            android:iconTint="#A9A9A9"
+            android:icon="@drawable/ic_baseline_settings_24"/>
+    </group>
+</menu>

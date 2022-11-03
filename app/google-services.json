@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "548436847382",
+    "firebase_url": "https://kasirqyu-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kasirqyu",
+    "storage_bucket": "kasirqyu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548436847382:android:b7eb1b158e7ec14d013e37",
+        "android_client_info": {
+          "package_name": "com.otnam.kasirqiu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548436847382-70mk3o4ip0b69c9e9sqg7mr82v8ag17k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLKzGJrRvHKajA_7eA1R9eZz3p0NQS5jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548436847382-70mk3o4ip0b69c9e9sqg7mr82v8ag17k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
