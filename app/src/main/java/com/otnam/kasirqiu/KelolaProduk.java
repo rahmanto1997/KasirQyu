@@ -47,6 +47,7 @@ public class KelolaProduk extends AppCompatActivity implements MainAdapter.Fireb
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kelola_produk);
+        getSupportActionBar().hide();
 
         if (Build.VERSION.SDK_INT >=19 && Build.VERSION.SDK_INT < 21){
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true);

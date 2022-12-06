@@ -1,18 +1,14 @@
 package com.otnam.kasirqiu;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -21,8 +17,6 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     ImageView topDrawerIcon;
     NavigationView navigationView;
     FrameLayout hand;
-    TextView kelolaProduk;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +28,9 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         navigationView = findViewById(R.id.navigationViewID);
         topDrawerIcon = findViewById(R.id.topDrawerIcon);
         hand = findViewById(R.id.hand);
-        kelolaProduk = findViewById(R.id.nav_kelolaProduk);
         navigationDrawer();
     }
+
     @Override
     public void onBackPressed(){
         if (drawerLayout.isDrawerVisible(GravityCompat.START)){
@@ -59,7 +53,6 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             }
         });
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -68,8 +61,6 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
                 break;
             case R.id.nav_kelolaProduk:
                 startActivity(new Intent(getApplicationContext(), KelolaProduk.class));
-                break;
-            case R.id.nav_customer:
                 break;
             case R.id.nav_hostory:
                 break;

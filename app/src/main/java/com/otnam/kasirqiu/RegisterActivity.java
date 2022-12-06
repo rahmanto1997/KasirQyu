@@ -35,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         auth=FirebaseAuth.getInstance();
         loadingBar= new ProgressDialog(this);
+        getSupportActionBar().hide();
 
         fullname=findViewById(R.id.field_fullname);
         email=findViewById(R.id.field_email);
@@ -49,14 +50,17 @@ public class RegisterActivity extends AppCompatActivity {
                 String sEmail=email.getText().toString();
                 String sPassword=password.getText().toString();
 
-                registerMethod(sEmail,sPassword);
+                registerMethod(sFullname,sEmail,sPassword);
             }
 
-            private void registerMethod(String sEmail, String sPassword) {
-                if (TextUtils.isEmpty(sEmail)){
+            private void registerMethod(String sFullname,String sEmail, String sPassword) {
+                if (TextUtils.isEmpty(sFullname)){
+                    fullname.setError("Fullname is required");
+                }
+                else if (TextUtils.isEmpty(sEmail)){
                     email.setError("Email is required");
                 }
-                if (TextUtils.isEmpty(sPassword)){
+                else if (TextUtils.isEmpty(sPassword)){
                      password.setError("Password  is required");
                 }
                 else {

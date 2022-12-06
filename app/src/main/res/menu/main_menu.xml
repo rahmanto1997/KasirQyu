@@ -12,11 +12,6 @@
             android:iconTint="#A9A9A9"
             android:icon="@drawable/ic_baseline_class_24"/>
         <item
-            android:id="@+id/nav_customer"
-            android:title="Kelola Pelanggan"
-            android:iconTint="#A9A9A9"
-            android:icon="@drawable/ic_baseline_people_24"/>
-        <item
             android:id="@+id/nav_hostory"
             android:title="Riwayat Transaksi"
             android:iconTint="#A9A9A9"
